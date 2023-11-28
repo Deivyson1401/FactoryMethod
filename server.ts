@@ -6,18 +6,14 @@ class type_Server implements structure_computador {
     CPU: Number;
     type: string;
     constructor(RAM: Number, HDD: Number, CPU: Number, type: string){
-        RAM = this.RAM,
-        HDD = this.HDD,
-        CPU = this.CPU
-        type = this.type
+        this.RAM = RAM
+        this.HDD = HDD
+        this.CPU = CPU
+        this.type = type
     }
 
     toString(): string{
-        return `COMPUTADOR TIPO ${this.type}
-        -----------------
-        RAM: ${this.RAM} GB
-        HDD: ${this.HDD} GB
-        CPU: ${this.CPU} GHz`
+        return `\nCOMPUTADOR TIPO ${this.type}\n-----------------\nRAM: ${this.RAM} GB\nHDD: ${this.HDD} GB\nCPU: ${this.CPU} GHz`
         
     }
 }

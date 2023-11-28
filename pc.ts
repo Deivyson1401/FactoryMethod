@@ -9,15 +9,11 @@ class type_PC implements structure_computador {
         this.RAM = RAM
         this.HDD = HDD
         this.CPU = CPU
-        this.type = this.type
+        this.type = type
     }
 
     toString(): string{
-        return `COMPUTADOR TIPO ${this.type}
-        -----------------
-        RAM: ${this.RAM} GB
-        HDD: ${this.HDD} GB
-        CPU: ${this.CPU} GHz`
+        return `\nCOMPUTADOR TIPO ${this.type}\n-----------------\nRAM: ${this.RAM} GB\nHDD: ${this.HDD} GB\nCPU: ${this.CPU} GHz`
         
     }
 }

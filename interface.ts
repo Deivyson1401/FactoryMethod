@@ -3,6 +3,6 @@ interface structure_computador {
     HDD: Number
     CPU: Number
     type: string;
-    toString(): string;
+    toString(): String;
 }
 export {structure_computador}
